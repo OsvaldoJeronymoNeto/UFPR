@@ -41,6 +41,52 @@ h1 {
 	margin-bottom: 15px;
 }
 
+figure{
+	text-align: center;
+
+}
+figcaption{
+    font-style: italic;
+	text-align: center;
+}
+
+.img-portifolio {
+	height:auto;
+	width: 100vh;
+	margin: 10px 50px 10px;
+	
+}
+
+.grid {
+	display: inline-flex;
+}
+.grid .imagem-portifolio{
+	float: left;
+
+}
+.grid p{
+	font-size: 25px;
+	font-family: 'Source Code Pro', monospace;
+	line-height: 2em;
+	color: #232323;
+	text-indent: 30px;
+	text-align: justify ;
+	width: 500px;
+	height: 180px;
+}
+.grid .highligted{
+	line-height: 1.1em;
+    display: inline-block;
+	padding: 5px;
+	text-align: center;
+	text-indent: 0;
+    font-style: normal;
+    border-radius: 3px;
+    color: #39339A;
+    background: #C9C9F4;
+}
+
+
 .contato {
 	text-align: center;
 	transition: transform 2s;
@@ -67,7 +113,7 @@ h1 {
 
 }
 .viagem {
-	margin: 350px 8em 20px;
+	margin: 30px 8em 20px;
 	position: relative;
 	float: left;
 }
@@ -78,33 +124,6 @@ h1 {
 	color: #232323;
 	text-indent: 30px;
 	text-align: justify;
-}
-
-figcaption{
-    font-style: italic;
-	text-align: center;
-}
-
-.img-portifolio {
-	height: 100%;
-	width: 90%;
-	margin: 10px 10px 10px;
-	object-fit: cover;
-	object-position: 50% 50% ;
-	transition: 1s;
-	background-color: greenyellow;
-
-}
-
-.viagem .imagem-guia{
-	height: 300px;
-	width: 300px;
-	margin: 10px;
-	padding: 10px;
-	margin: 10px;
-	float: left;
-	/*margin-right: 1em;*/
-	background-color: lawngreen;
 }
 
 .showcase {
@@ -167,11 +186,6 @@ figcaption{
 .btn:active,
 .btn:hover {/*pseudo classe - qdo passar o mouse em cima do botão Read More e aumenta*/
 	transform: scale(1.25);
-}
-
-.grid {
-	display: grid;
-	gap: 2em;
 }
 
 .grid icons{
