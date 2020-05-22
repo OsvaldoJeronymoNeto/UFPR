@@ -4,28 +4,17 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/*A propriedade CSS box-sizing é utilizada para alterar a propriedade
-	padrão da box model, usada para calcular larguras (widths) e alturas 
-	(heights) dos elementos. É possível usar essa propriedade para emular
-	o comportamento dos navegadores (browsers) que não suportam corretamente
-	a especificação da propriedade CSS box model.*/
 }
 
 :root {
 	--primary-color/*variavel CSS global*/: #3a4052;
 }
 
-/*A pseudo-class CSS  :root representa o elemento root de uma árvore, 
-representando o documento. Aplicado ao HTML, :root representa o elemento 
-<html>  e é identico ao seletor html, exceto que sua especificidade é mais 
-alta.*/
-
 body{
 	font-family: 'Source Code Pro', monospace;
 	line-height: 1.5;/*Espaçamento entre as linhas*/
 	background-color:  #fdfdfd;
 	color: #232323;
-/*background: var(--primary-color);*/
 }
 
 a {
@@ -54,7 +43,7 @@ figcaption{
 	height:auto;
 	width: 100vh;
 	margin: 10px 50px 10px;
-	
+
 }
 
 .grid {
@@ -62,7 +51,6 @@ figcaption{
 }
 .grid .imagem-portifolio{
 	float: left;
-
 }
 .grid p{
 	font-size: 25px;
@@ -74,6 +62,7 @@ figcaption{
 	width: 500px;
 	height: 180px;
 }
+.viagem .highligted,
 .grid .highligted{
 	line-height: 1.1em;
     display: inline-block;
@@ -85,7 +74,30 @@ figcaption{
     color: #39339A;
     background: #C9C9F4;
 }
+.viagem {
+	display: inline-block;
+	position: relative;
+	margin-top: 30px;
+	padding-left: 60px;
+	padding-right: 170px;
+	float: left;
+}
+.viagem .youtube{
+	float: left;
+}
+.youtube {
+	margin: 10px 0px 10px;
+	float: left;
 
+}
+.viagem p{
+	font-size: 25px;
+	font-family: 'Source Code Pro', monospace;
+	line-height: 2em;
+	color: #232323;
+	text-indent: 30px;
+	text-align: justify ;
+}
 
 .contato {
 	text-align: center;
@@ -101,30 +113,16 @@ figcaption{
 	transform: scale(1.25);
 }
 .contato h1{
-/*	background-color: #d3d3d3;*/
-	border-bottom: 2px solid #333333;
 	color: #202020;
 	letter-spacing: .1em;
-	margin-right:  150px;
-	margin-left: 150px;
+	margin-right: auto;
+	margin-left: auto;
     text-shadow: 
       -1px -1px 1px #111, 
       2px 2px 1px #363636;
 
 }
-.viagem {
-	margin: 30px 8em 20px;
-	position: relative;
-	float: left;
-}
-.viagem p{
-	font-size: 20px;
-	font-family: 'Source Code Pro', monospace;
-	line-height: 1.5;
-	color: #232323;
-	text-indent: 30px;
-	text-align: justify;
-}
+
 
 .showcase {
 	height: 100vh; /*altura da tela - valor absoluto*/
@@ -205,41 +203,6 @@ figcaption{
 	}
 }
 
-.flip-card {
-	background-color: magenta;
-	perspective: 500px;
-}
-
-.card {
-	position: relative;
-	transform-style: preserve-3d;
-	transition: transform 1s;
-	
-}
-
-.flip-card:hover .card {
-	transform: rotateY(180deg);
-}
-
-.card-front, 
-.card-back {
-	left: 0;
-	position: absolute;
-	top:0;
-	backface-visibility: hidden;
-}
-
-.card-front {
-	background-color: lawngreen;
-}
-
-.card-back {
-	background-color: red;
-	height: 280px;
-	width: 100%;
-	transform: rotateY(180deg);
-	
-}
 
 #about {
 	padding: 40px;
