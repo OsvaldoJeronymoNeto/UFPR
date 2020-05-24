@@ -1,60 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
     <head>
         <meta charset="utf-8">
         <title>UFPR</title>
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Indie+Flower&family=Source+Code+Pro&display=swap" rel="stylesheet"> 
-        <script 
-            src="https://kit.fontawesome.com/6a9f76ef3f.js" crossorigin="anonymous">
-        </script>
+        <script src="https://kit.fontawesome.com/87310c182a.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <section class="showcase">
-            <div class="video-container">
-               <video src="video/iStock-1026901578.mov" autoplay muted loop></video>
-            </div>
-            <div class="content">
-				<h1>Gamificação</h1>
-                <h3>Estratégia para o treinamento de equipes remotas</h3>
-                <a href="#about" class="btn">Leia mais</a>
-            </div>
-        </section>        
-        <section id="about">
-			<h1>Treinamento de equipes remotas</h1>
-			<p>
-                Clique na figura abaixo e participe do nosso Quiz! 
-			</p>
-        </section>
-            <div class="grid">
-                <figure>
-                    <a target="_blank"href="https://kahoot.it/challenge/a132593f-3b2e-484f-b0bf-f2fce994996b_1590097851325"><img class="img-portifolio" src="img/iStock-1138748691.jpg" alt="Martelo simbolizando o Pregão Eletrônico"></a>
-               
-                    <figcaption>Quiz elaborado utilizando a plataforma Kahoot</figcaption>
-                </figure>
-                <p class="texto">
-                    Lembramos que no Quiz somente participarão no <span class="highligted"> máximo 20 </span>jogadores simultâneamente. Ao clicar na imagem ao lado você será direcionado para o site da <span class="highligted">Kahoot<a target="_blank" href="https://kahoot.it/">(https://kahoot.it)</a></span>. 
-                    Já no site você terá que digitar o <span class="highligted">Game PIN</span> que criamos: <span class="highligted">0728046</span>; e, em seguida clicar no botão <span class="highligted">Enter</span>. Aí você irá digitar o seu <span class="highligted">Nome</span> e clicar em <span class="highligted">OK!</span>               
+        <header>
+            <section class="showcase">
+                <div class="video-container">
+                    <video src="video/iStock-1026901578.mov" autoplay muted loop></video>
+                </div>
+                <div class="content">
+                    <h1>Gamificação</h1>
+                    <h3>Estratégia para o treinamento de equipes remotas</h3>
+                    <a href="#about" class="btn">Leia mais</a>
+                </div>
+            </section>
+        </header>        
+    
+        <main>
+            <div id="about">
+                <h1>Treinamento de equipes remotas</h1>
+                <p>
+                    Clique na figura abaixo e participe do nosso Quiz! 
                 </p>
             </div>
-
-        <div class="viagem">
-            <p>
-                Sugerimos que jogadores assistam - antes de participar do nosso Quiz - a <span class="highligted">playlist</span> de vídeos elaborada pela <span class="highligted"> Nacional de Administração Pública <a target="_blank" href="https://www.enap.gov.br/pt/">(ENAP)</a></span>, que tem como tema o
-                o Novo Decreto do Pregão Eletrônico.
-            </p>
-                <iframe class="youtube" width="100%" style="height: 100vh;" src="https://www.youtube.com/embed/videoseries?list=PLCDO8oMmhbxsRIUfgBRfP-4LgOkb4a1ta" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-        </div>
-        <section class="contato">
-            <h1>Entre em contato comigo:</h1>
-              <div class="grid icons">
-                    <a href="mailto:osvaldo.j.neto@gmail.com" target="_blank">
-                        <i class="far fa-envelope"></i>
+            <div class="grid">
+                    <p>
+                        Lembramos que no Quiz somente participarão no <span class="highligted"> máximo 20 </span>jogadores simultâneamente. Ao clicar na imagem ao lado você será direcionado para o site da <span class="highligted">Kahoot<a target="_blank" href="https://kahoot.it/">(https://kahoot.it)</a></span>. 
+                        Já no site você terá que digitar o <span class="highligted">Game PIN</span> que criamos: <span class="highligted">0728046</span>; e, em seguida clicar no botão <span class="highligted">Enter</span>. Aí você irá digitar o seu <span class="highligted">Nome</span> e clicar em <span class="highligted">OK!</span>               
+                    </p>
+                    <a target="_blank"href="https://kahoot.it/challenge/a132593f-3b2e-484f-b0bf-f2fce994996b_1590097851325">
+                        <img src="img/iStock-1138748691.jpg" class="img-portifolio" alt="Martelo simbolizando o Pregão Eletrônico">
                     </a>
+            </div>
+            <div class="material-estudo">
+                    <p>
+                        Sugerimos que jogadores assistam - antes de participar do nosso Quiz - 
+                        a <span class="highligted">playlist</span> de vídeos elaborada pela 
+                        <span class="highligted"> Nacional de Administração Pública 
+                            <a target="_blank" href="https://www.enap.gov.br/pt/">(ENAP)</a>
+                        </span>, que tem como tema o Novo Decreto do Pregão Eletrônico.
+                    </p>
+            </div>
+            <div class="youtube">
+                <div class="enap">
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/gi4L15fdro0" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
                 </div>
-        </section>
+            </div>
+        </main>
+
+        <footer class="fixed_footer">
+            <div class="content">
+                <h1>Entre em contato comigo:</h1> 
+                <a target="_blank" href="mailto:osvaldo.j.neto@gmail.com" class="btn-icons"><i class="fas fa-envelope"></i></a>
+            </div>
+        </footer>
+
     </body>
 </html>
